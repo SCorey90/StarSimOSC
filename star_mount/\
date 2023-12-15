@@ -1,0 +1,7 @@
+#!/bin/bash
+
+echo "Running StarSim"
+root4star starsim/starsim.C
+
+echo "Running Reco Chain"
+./runBFC starsim/kinematics.starsim.fzd $1
